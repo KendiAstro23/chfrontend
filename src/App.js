@@ -1,18 +1,20 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ClientList from './components/ClientList';
-import ClientForm from './components/ClientForm';
-import ProgramList from './components/ProgramList';
-import Login from './components/Login';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Services from './pages/Services';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Account from './pages/Account';
+//import Navbar from './components/Navbar';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ClientList />} />
-        <Route path="/add-client" element={<ClientForm />} />
-        <Route path="/programs" element={<ProgramList />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/account" element={<Account />} />
       </Routes>
     </Router>
   );
