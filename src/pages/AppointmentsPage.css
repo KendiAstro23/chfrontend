@@ -1,0 +1,92 @@
+.appointments-page {
+    background-color: #f0f8ff;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+  }
+  
+  .appointments-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .appointment-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    transition: transform 0.3s;
+  }
+  
+  .appointment-item:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Notes colors based on Program */
+  .notes-tag {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .notes-nutrition {
+    background-color: #ffd580;
+    color: #7a5901;
+  }
+  
+  .notes-mental {
+    background-color: #c9e4de;
+    color: #275c5c;
+  }
+  
+  .notes-physical {
+    background-color: #ffb6b9;
+    color: #7f2121;
+  }
+  
+  .notes-chronic {
+    background-color: #f6c6ea;
+    color: #6b2275;
+  }
+  
+  .notes-preventive {
+    background-color: #bae1ff;
+    color: #1e3d59;
+  }
+  
+  .notes-wellness {
+    background-color: #d3f8e2;
+    color: #227c53;
+  }
+  
+  .cancel-btn {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-top: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .cancel-btn:hover {
+    background-color: #d9363e;
+  }
+  

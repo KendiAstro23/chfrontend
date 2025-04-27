@@ -1,0 +1,53 @@
+/* src/styles/ClientList.css */
+
+.client-list {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .client-list input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .client-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    gap: 15px;
+  }
+  
+  .client-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .client-info {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .view-profile-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .view-profile-btn:hover {
+    background-color: #45a049;
+  }
+  

@@ -1,0 +1,51 @@
+.book-program-page {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.book-program-page h1 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #005b96;
+    margin-bottom: 2rem;
+}
+
+.book-program-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.book-program-page input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.book-program-page button {
+    padding: 0.9rem 1.5rem;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-program-page button:hover {
+    background-color: #276c47;
+}
+
+.success-message {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: green;
+    font-weight: bold;
+}

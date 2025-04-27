@@ -8,49 +8,10 @@ const HomePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header Section */}
-      <header className="site-header">
-        {/* Header Top: Logo and Spacer */}
-        <div className="header-top">
-          <div className="logo">CEMA Health</div>
-        </div>
-
-        {/* Header Nav Links */}
-        <nav className="header-nav">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/account">Client Account</Link>
-        </nav>
-
-        {/* Hamburger Icon */}
-        <div className="header-bottom">
-          <button className="hamburger" onClick={toggleMenu}>
-            <span className="line" />
-            <span className="line" />
-            <span className="line" />
-          </button>
-        </div>
-      </header>
-
-      {/* Mobile Menu: Appears when Hamburger is clicked */}
-      {isMenuOpen && (
-        <div className="menu-overlay" onClick={toggleMenu}>
-          <div className="menu" onClick={e => e.stopPropagation()}>
-            <Link to="/" onClick={toggleMenu}>Home</Link>
-            <Link to="/services" onClick={toggleMenu}>Services</Link>
-            <Link to="/about" onClick={toggleMenu}>About Us</Link>
-            <Link to="/contact" onClick={toggleMenu}>Contact</Link>
-            <Link to="/account" onClick={toggleMenu}>Client Account</Link>
-          </div>
-        </div>
-      )}
-
       {/* Hero Section */}
       <section
         className="hero"
-        style={{ backgroundImage: `url('/images/Hero back.jpg')` }} // Adjust the path if needed
+        style={{ backgroundImage: `url('/images/Hero back.jpg')` }} 
       >
         <div className="hero-overlay" />
         <div className="hero-content">
@@ -59,7 +20,6 @@ const HomePage = () => {
         </div>
       </section>
 
-       {/* Other Sections */}
          {/* Services Section */}
       <section className="services-section py-16 px-6 md:px-20">
         <h2 className="text-2xl font-semibold mb-8 text-center">Our Services</h2>
@@ -131,23 +91,6 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-
-      <section id="about" className="section alt">
-        <h2>About Us</h2>
-        <p>
-          We are a dedicated healthcare provider offering personalized wellness programs designed to help you achieve your health goals.
-        </p>
-      </section>
-
-      <section id="contact" className="section">
-        <h2>Contact Us</h2>
-        <p>Email: info@cemahealth.com</p>
-        <p>Phone: +123 456 789</p>
-      </section>
-
-      <footer className="footer">
-        <p>&copy; {new Date().getFullYear()} CEMA Health. All rights reserved.</p>
-      </footer>
     </div>
   );
 };
